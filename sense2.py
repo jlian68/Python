@@ -1,5 +1,6 @@
 from sense_emu import SenseHat
 from time import sleep
+
 s = SenseHat()
 
 # O Βρόχος while True θα εκτελείται μέχρι να διακόψουμε το πρόγραμμά μας.
