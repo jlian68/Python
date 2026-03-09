@@ -15,7 +15,7 @@ pressure = s.pressure
 
 # στρογγυλοποιούμε τις παραπάνω τιμές στο πρώτο δεκαδικό:
 temp = round(temp,1)
-humid = round(humid ,1)
+humid = round(humid,1)
 pressure= round(pressure,1)
 
 # Εκτυπώνουμε τις τιμές στην κονσόλα
