@@ -1,5 +1,5 @@
 # Εισαγωγή της βιβλιοθήκης για διαχείριση του Sense HAT
-from sense_hat import SenseHat
+from sense_emu import SenseHat
 # Εισαγωγή της βιβλιοθήκης για διαχείριση του χρόνου
 import time
 
@@ -7,6 +7,8 @@ import time
 s = SenseHat()
 s.clear()
 s.low_light=True
+# Enables Compass, Gyroscope, and Accelerometer (IMU) data 
+# to be ready for retrieval
 s.set_imu_config(True, True, True)
 
 # Εναλλαγή μηνυμάτων LED ανά επανάληψη ώστε να μη μπλοκάρει για πολλή ώρα
@@ -64,6 +66,6 @@ try:
       time.sleep(0.5)
       s.clear()
 except KeyboardInterrupt:
-   print('\nΤερματισμός με Ctrl+C...')
+   print('\nPress Ctrl+C to terminate...')
 finally:
    s.clear()
