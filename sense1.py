@@ -1,4 +1,4 @@
-from sense_emu import SenseHat
+from sense_hat import SenseHat
 
 s = SenseHat()
 s.low_light=True
